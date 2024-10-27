@@ -33,7 +33,7 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 - **Annotations and Images**: Samples from the dataset are included in the `data` directory.
 
 ## Observations and Comments
-The model shows a decreasing trend in both training and validation losses, indicating effective learning. However, the RPN losses remain relatively high, suggesting a need for further tuning of anchor configurations or learning rate adjustments.
+The training process demonstrates a steady decline in both training and validation losses, reflecting effective learning and model performance. However, the RPN losses remain relatively elevated, indicating potential areas for improvement in anchor configurations or learning rate adjustments to enhance overall model efficacy.
 
 ## Getting Started
 
