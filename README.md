@@ -28,7 +28,7 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 ## Results
 - **Training Logs**: Included in the `train_logs.txt` file.
 - **Confusion Matrix**: [Link to confusion matrix]
-- **Loss Graph**: [Link to loss graph]
+- **Loss Graph**: ![Training vs Validation Loss](images/plot.png)
 - **Test Images**: [Link to test images]
 - **Annotations and Images**: Samples from the dataset are included in the `data` directory.
 
