@@ -31,9 +31,9 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 - **Loss Graph**: ![Training vs Validation Loss](images/plot.PNG)
 - **Test Images**: [Link to test images]
 - **Annotations and Images**: 
-- Samples from the dataset are included in the `dataset` directory:
-- Training images and annotations are in `dataset/train`
-- Validation images and annotations are in `dataset/val`
+  - Samples from the dataset are included in the `dataset` directory:
+    - Training images and annotations are in `dataset/train`
+    - Validation images and annotations are in `dataset/val`
 
 ## Observations and Comments
 The training process demonstrates a steady decline in both training and validation losses, reflecting effective learning and model performance. However, the RPN losses remain relatively elevated, indicating potential areas for improvement in anchor configurations or learning rate adjustments to enhance overall model efficacy.
