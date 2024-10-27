@@ -26,7 +26,7 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 - **Steps per Epoch**: 100
 
 ## Results
-- **Training Logs**: Included in the `train_logs.txt` file.
+- **Training Logs**: Included in the [train_logs.txt](train_logs.txt) file.
 - **Confusion Matrix**: [Link to confusion matrix]
 - **Loss Graph**: ![Training vs Validation Loss](images/plot.PNG)
 - **Test Images**: [Link to test images]
