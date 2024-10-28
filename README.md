@@ -9,6 +9,10 @@ The goal of this project is to accurately detect drones in images using a pre-tr
 - **Training Images**: 252 images labeled for training.
 - **Validation Images**: 50 images labeled for validation.
 - **Labelized**: with labelme 
+- **Annotations**: Sample annotations with labeled drones are shown below:
+
+![Annotated Training Image Exemple](images/drone_annotation_0.PNG)
+![Annotated Training Image Exemple 2](images/drone_annotation_2.PNG)
 
 ## Model Architecture
 The Mask R-CNN architecture is used with a ResNet backbone and consists of:
