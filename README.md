@@ -53,7 +53,20 @@ This project includes two Jupyter notebooks for training and testing:
 - **Training Logs**: Included in the [train_logs.txt](train_logs.txt) file.
 - **Confusion Matrix**: [Link to confusion matrix]
 - **Loss Graph**: ![Training vs Validation Loss](images/plot.PNG)
-- **Test Images**: [Link to test images]
+- **Test Images**: 
+
+Below are examples of the model's predictions on test images. Each output includes the original image and the detected areas, highlighting where the model identified drones.
+
+**Example Test Image 1**:  
+![Test Image 1](images/drone_annotation_0.PNG)
+
+**Example Test Image 2**:  
+![Test Image 2](images/drone_annotation_3.PNG)
+
+These examples demonstrate the model's capacity to detect drones within real-world images, although some segmentation results may be inaccurate or contain errors.
+
+- **Test Images**: [Link to test images](path/to/your/test/images)
+
 - **Annotations and Images**: 
   - Samples from the dataset are included in the `dataset` directory:
     - Training images and annotations are in `dataset/train`
@@ -66,10 +79,10 @@ The training process demonstrates a steady decline in both training and validati
 ## Getting Started
 
 ### Prerequisites
-- Python 3.6+
-- TensorFlow 2.x
-- Keras
-- scikit-image
+- Python 3.6 OR 3.7
+- TensorFlow 1.x
+- Keras 0.17.x
+- scikit-image 2.1.x
 
 ### Installation
 ```sh
