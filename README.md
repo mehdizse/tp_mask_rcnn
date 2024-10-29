@@ -58,14 +58,13 @@ This project includes two Jupyter notebooks for training and testing:
 Below are examples of the model's predictions on test images. Each output includes the original image and the detected areas, highlighting where the model identified drones.
 
 **Example Test Image 1**:  
-![Test Image 1](images/drone_annotation_0.PNG)
+![Test Image 1](images/result_0.png)
 
 **Example Test Image 2**:  
-![Test Image 2](images/drone_annotation_3.PNG)
+![Test Image 2](images/result_3.png)
 
 These examples demonstrate the model's capacity to detect drones within real-world images, although some segmentation results may be inaccurate or contain errors.
 
-- **Test Images**: [Link to test images](path/to/your/test/images)
 
 - **Annotations and Images**: 
   - Samples from the dataset are included in the `dataset` directory:
