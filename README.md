@@ -42,6 +42,13 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 - **Detection Confidence Threshold**: 0.9
 - **Steps per Epoch**: 100
 
+## Jupyter Notebooks
+
+This project includes two Jupyter notebooks for training and testing:
+
+- **[train.ipynb](train.ipynb)**: This notebook contains the code and dataset for training the model. It includes preprocessing, model setup, and training steps and also the refine code.
+- **[test.ipynb](test.ipynb)**: This notebook contains code for testing the trained model on real images. It allows you to evaluate the model's performance on new, unseen data.
+
 ## Results
 - **Training Logs**: Included in the [train_logs.txt](train_logs.txt) file.
 - **Confusion Matrix**: [Link to confusion matrix]
@@ -51,6 +58,7 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
   - Samples from the dataset are included in the `dataset` directory:
     - Training images and annotations are in `dataset/train`
     - Validation images and annotations are in `dataset/val`
+
 
 ## Observations and Comments
 The training process demonstrates a steady decline in both training and validation losses, reflecting effective learning and model performance. However, the RPN losses remain relatively elevated, indicating potential areas for improvement in anchor configurations or learning rate adjustments to enhance overall model efficacy.
