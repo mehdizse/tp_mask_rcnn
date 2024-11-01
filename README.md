@@ -61,7 +61,9 @@ Below is an image showing the training logs generated for each epoch during the 
 ## 📈 Results
 
 - **Training Logs**: Included in the [train_logs.txt](train_logs.txt) file.
-- **Confusion Matrix**: [Link to confusion matrix]
+- **Confusion Matrix**: 
+The confusion matrix below represents the results of our drone detection model on the test dataset. As shown, all values in the matrix are zero, which indicates that the model did not make any correct or incorrect predictions for either the "background" or "drone" classes in this particular evaluation.
+![Confusion Matrix](images/matrice_de_confusion.png)
 - **Loss Graph**: ![Training vs Validation Loss](images/plot.PNG)
 - **Test Images**: 
 
