@@ -1,6 +1,6 @@
 # Drone Detection with Mask R-CNN
 
-This repository contains the implementation and training of a Mask R-CNN model for detecting drones in images. The model is built using the Matterport Mask R-CNN implementation and trained on a custom drone dataset.
+This repository contains the implementation and training of a Mask R-CNN model for detecting drones in images. The model is built using Mask R-CNN implementation and trained on a custom drone dataset.
 
 ## Overview
 The goal of this project is to accurately detect drones in images using a pre-trained COCO model and further fine-tune it on a custom dataset. The model's performance is evaluated based on various metrics, and its results are analyzed through different lenses.
@@ -26,6 +26,10 @@ Below are examples showing an image from the dataset and its associated object m
 
 Each mask shows individual objects, making it easier to observe object locations and contours in the images.
 
+- **Annotations and Images**: 
+  - Samples from the dataset are included in the `dataset` directory:
+    - Training images and annotations are in `dataset/train`
+    - Validation images and annotations are in `dataset/val`
 
 ## Model Architecture
 The Mask R-CNN architecture is used with a ResNet backbone and consists of:
@@ -34,7 +38,7 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 
 ## Training
 - **Epochs**: 20 (each epoch takes approximately 2 hours, as shown in `training_logs.txt`)
-- **Learning Rate**: 0.001 (adjusted during training)
+- **Learning Rate**: 0.001 
 - **Optimizer**: Adam
 - **Batch Size**: 1 (due to GPU limitations)
 
@@ -48,6 +52,10 @@ This project includes two Jupyter notebooks for training and testing:
 
 - **[train.ipynb](train.ipynb)**: This notebook contains the code and dataset for training the model. It includes preprocessing, model setup, and training steps and also the refine code.
 - **[test.ipynb](test.ipynb)**: This notebook contains code for testing the trained model on real images. It allows you to evaluate the model's performance on new, unseen data.
+
+## Training Logs
+Below is an image showing the training logs generated for each epoch during the training process:
+<img src="images/fichiers_genere_annotation.PNG" alt="Training Logs" width="500"/>
 
 ## Results
 - **Training Logs**: Included in the [train_logs.txt](train_logs.txt) file.
@@ -64,13 +72,6 @@ Below are examples of the model's predictions on test images. Each output includ
 ![Test Image 2](images/result_3.png)
 
 These examples demonstrate the model's capacity to detect drones within real-world images, although some segmentation results may be inaccurate or contain errors.
-
-
-- **Annotations and Images**: 
-  - Samples from the dataset are included in the `dataset` directory:
-    - Training images and annotations are in `dataset/train`
-    - Validation images and annotations are in `dataset/val`
-
 
 ## Observations and Comments
 The training process demonstrates a steady decline in both training and validation losses, reflecting effective learning and model performance. However, the RPN losses remain relatively elevated, indicating potential areas for improvement in anchor configurations or learning rate adjustments to enhance overall model efficacy.
