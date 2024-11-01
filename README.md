@@ -116,6 +116,16 @@ The training process demonstrates a steady decline in both training and validati
 pip install -r requirements.txt
 ```
 
+
+## 👥 Contributors
+
+This drone detection project was developed as a collaborative effort:
+
+- [**GHOMARI Mehdi**](mailto:mehdi.ghomari@etu.u-pec.fr)
+
+- [**Aito Florentin Meignan**](mailto:aito-florentin.meignan@etu.u-pec.fr)
+
+
 ## 📚 References
 
 - Mask R-CNN Paper: [arXiv:1703.06870](https://arxiv.org/abs/1703.06870)
