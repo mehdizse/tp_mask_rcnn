@@ -55,6 +55,7 @@ This project includes two Jupyter notebooks for training and testing:
 
 ## Training Logs
 Below is an image showing the training logs generated for each epoch during the training process:
+<br/>
 <img src="images/fichiers_genere_annotation.PNG" alt="Training Logs" width="500"/>
 
 ## Results
