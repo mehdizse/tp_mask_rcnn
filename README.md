@@ -100,14 +100,22 @@ These refinements were implemented to achieve a better trade-off between detecti
 The model was refined over a span of 10 epochs, with training and validation metrics logged in the [`refine_logs.txt`](refine_logs.txt) file. This log file includes detailed metrics for each epoch, allowing further analysis of how the refinement affected model accuracy, loss, and detection quality. 
 
 ## Refinement Logs
+
 Below is an image showing the refinement logs generated for each epoch during the refinement process:
-<br/>
+
 <img src="images/fichiers_genere_retrain.PNG" alt="Training Logs" width="500"/>
 
-- **Refinement Graph**: ![Training vs Validation Loss](images/refinement_graphe.PNG)
+- **Refinement Graph**: 
+
+![Training vs Validation Loss](images/refinement_graphe.PNG)
 
 ## 📝 Observations and comments
-The training process demonstrates a steady decline in both training and validation losses, reflecting effective learning and model performance. However, the RPN losses remain relatively elevated, indicating potential areas for improvement in anchor configurations or learning rate adjustments to enhance overall model efficacy.
+The training process demonstrates a steady decline in both training and validation losses, reflecting effective learning and model performance. However, the RPN losses remain relatively elevated, suggesting potential areas for improvement in anchor configurations or learning rate adjustments to enhance overall model efficacy.
+
+Additionally, it appears that underfitting may be a concern, particularly due to the complexity of the annotations on the images. This complexity may hinder the model's ability to segment accurately, resulting in suboptimal performance. To address this, we could explore enhancing the quality of annotations, refining the data augmentation strategies, or even adjusting the model architecture to better capture the intricacies of the dataset.
+
+A key step in improving model performance will be to simplify the annotations. By reducing the complexity of the annotations, we can help the model better learn the relevant features without being overwhelmed by intricate details. This could involve creating clearer boundaries or reducing the number of overlapping instances, which would facilitate more effective training and lead to improved segmentation outcomes.
+
 
 ## 🚀 Getting Started
 
