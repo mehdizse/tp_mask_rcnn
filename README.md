@@ -123,7 +123,7 @@ This drone detection project was developed as a collaborative effort:
 
 - [**GHOMARI Mehdi**](mailto:mehdi.ghomari@etu.u-pec.fr)
 
-- [**Aito Florentin Meignan**](mailto:aito-florentin.meignan@etu.u-pec.fr)
+- [**MEIGNAN Aito Florentin**](mailto:aito-florentin.meignan@etu.u-pec.fr)
 
 
 ## 📚 References
