@@ -95,7 +95,7 @@ These refinements were implemented to achieve a better trade-off between detecti
 The model was refined over a span of 10 epochs, with training and validation metrics logged in the [`refine_logs.txt`](refine_logs.txt) file. This log file includes detailed metrics for each epoch, allowing further analysis of how the refinement affected model accuracy, loss, and detection quality. 
 
 ## Refinement Logs
-Below is an image showing the training logs generated for each epoch during the training process:
+Below is an image showing the refinement logs generated for each epoch during the refinement process:
 <br/>
 <img src="images/fichiers_genere_retrain.PNG" alt="Training Logs" width="500"/>
 
