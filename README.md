@@ -114,7 +114,7 @@ The training process demonstrates a steady decline in both training and validati
 ### Installation
 ```sh
 pip install -r requirements.txt
-
+```
 
 ## 📚 References
 
