@@ -28,8 +28,8 @@ Each mask shows individual objects, making it easier to observe object locations
 
 - **Annotations and Images**: 
   - Samples from the dataset are included in the `dataset` directory:
-    - Training images and annotations are in `dataset/train`
-    - Validation images and annotations are in `dataset/val`
+    - [Training images and annotations](dataset/train)
+    - [Validation images and annotations](dataset/val)
 
 ## Model Architecture
 The Mask R-CNN architecture is used with a ResNet backbone and consists of:
