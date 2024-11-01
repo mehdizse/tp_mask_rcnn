@@ -104,6 +104,7 @@ Below is an image showing the refinement logs generated for each epoch during th
 <br/>
 <img src="images/fichiers_genere_retrain.PNG" alt="Training Logs" width="500"/>
 
+- **Refinement Graph**: ![Training vs Validation Loss](images/refinement_graphe.PNG)
 
 ## 📝 Observations and comments
 The training process demonstrates a steady decline in both training and validation losses, reflecting effective learning and model performance. However, the RPN losses remain relatively elevated, indicating potential areas for improvement in anchor configurations or learning rate adjustments to enhance overall model efficacy.
