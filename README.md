@@ -2,13 +2,13 @@
 
 This repository contains the implementation and training of a Mask R-CNN model for detecting drones in images. The model is built using Mask R-CNN implementation and trained on a custom drone dataset.
 
-## Overview
+## 🎯 Overview
 The goal of this project is to accurately detect drones in images using a pre-trained COCO model and further fine-tune it on a custom dataset. The model's performance is evaluated based on various metrics, and its results are analyzed through different lenses.
 
-## Dataset
+## 📊 Dataset
 - **Training Images**: 252 images labeled for training.
 - **Validation Images**: 50 images labeled for validation.
-- **Labelized**: with labelme 
+- **Annotation Tool**: labelme
 - **Annotations**: Sample annotations with detailed labels for each object are shown below; however, the level of detail in these annotations may be quite complex.
 
 ![Annotated Training Image Exemple](images/drone_annotation_0.PNG)
@@ -46,7 +46,7 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 - **Detection Confidence Threshold**: 0.9
 - **Steps per Epoch**: 100
 
-## Jupyter Notebooks
+## 📓 Jupyter Notebooks
 
 This project includes two Jupyter notebooks for training and testing:
 
@@ -58,7 +58,8 @@ Below is an image showing the training logs generated for each epoch during the 
 <br/>
 <img src="images/fichiers_genere_annotation.PNG" alt="Training Logs" width="500"/>
 
-## Results
+## 📈 Results
+
 - **Training Logs**: Included in the [train_logs.txt](train_logs.txt) file.
 - **Confusion Matrix**: [Link to confusion matrix]
 - **Loss Graph**: ![Training vs Validation Loss](images/plot.PNG)
@@ -100,10 +101,10 @@ Below is an image showing the refinement logs generated for each epoch during th
 <img src="images/fichiers_genere_retrain.PNG" alt="Training Logs" width="500"/>
 
 
-## Observations and Comments
+## 📝 Observations and comments
 The training process demonstrates a steady decline in both training and validation losses, reflecting effective learning and model performance. However, the RPN losses remain relatively elevated, indicating potential areas for improvement in anchor configurations or learning rate adjustments to enhance overall model efficacy.
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 - Python 3.6 OR 3.7
