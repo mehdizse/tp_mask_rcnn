@@ -31,18 +31,18 @@ Each mask shows individual objects, making it easier to observe object locations
     - [Training images and annotations](dataset/train)
     - [Validation images and annotations](dataset/val)
 
-## Model Architecture
+## 🧠 Model Architecture
 The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 1. Region Proposal Network (RPN)
 2. Mask Head for segmentation
 
-## Training
+## 🚂 Training
 - **Epochs**: 20 (each epoch takes approximately 2 hours, as shown in `training_logs.txt`)
 - **Learning Rate**: 0.001 
 - **Optimizer**: Adam
 - **Batch Size**: 1 (due to GPU limitations)
 
-## Hyperparameters
+## 🎛️ Hyperparameters
 - **Detection Confidence Threshold**: 0.9
 - **Steps per Epoch**: 100
 
@@ -76,11 +76,11 @@ Below are examples of the model's predictions on test images. Each output includ
 These examples demonstrate the model's capacity to detect drones within real-world images, although some segmentation results may be inaccurate or contain errors.
 
 
-## Model Refinement
+## 🛠️ Model Refinement
 
 To improve the model’s performance, several key parameters were adjusted to optimize detection and segmentation of drones in the images. These refined settings were selected to make the model more sensitive to drone detection and enhance its efficiency given the available hardware constraints.
 
-### Refinement Parameters
+### 🔄 Refinement Parameters
 
 The following parameters were adjusted:
 
@@ -91,7 +91,7 @@ The following parameters were adjusted:
 
 These refinements were implemented to achieve a better trade-off between detection accuracy and computational efficiency, allowing the model to perform effectively on the target dataset and accurately segment drones in various image conditions.
 
-### Refinement Results
+### 📋 Refinement Results
 
 The model was refined over a span of 10 epochs, with training and validation metrics logged in the [`refine_logs.txt`](refine_logs.txt) file. This log file includes detailed metrics for each epoch, allowing further analysis of how the refinement affected model accuracy, loss, and detection quality. 
 
