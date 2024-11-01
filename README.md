@@ -110,11 +110,15 @@ Below is an image showing the refinement logs generated for each epoch during th
 ![Training vs Validation Loss](images/refinement_graphe.PNG)
 
 ## 📝 Observations and comments
-The training process demonstrates a steady decline in both training and validation losses, reflecting effective learning and model performance. However, the RPN losses remain relatively elevated, suggesting potential areas for improvement in anchor configurations or learning rate adjustments to enhance overall model efficacy.
 
-Additionally, it appears that underfitting may be a concern, particularly due to the complexity of the annotations on the images. This complexity may hinder the model's ability to segment accurately, resulting in suboptimal performance. To address this, we could explore enhancing the quality of annotations, refining the data augmentation strategies, or even adjusting the model architecture to better capture the intricacies of the dataset.
+The training process demonstrates a **steady decline** in both training and validation losses, reflecting **effective learning** and **model performance**. However, the **RPN losses** remain relatively elevated, particularly the **RPN bounding box loss**, which suggests that the model is struggling to accurately regress the bounding boxes for proposals. This could be due to **suboptimal anchor configurations** or an **insufficient learning rate** for the RPN.
 
-A key step in improving model performance will be to simplify the annotations. By reducing the complexity of the annotations, we can help the model better learn the relevant features without being overwhelmed by intricate details. This could involve creating clearer boundaries or reducing the number of overlapping instances, which would facilitate more effective training and lead to improved segmentation outcomes.
+Additionally, the model's performance may be hindered by **underfitting**, as indicated by the relatively high validation losses. One potential cause of this is the **complexity of the annotations** on the images. The dataset includes many **overlapping instances** and intricate boundaries, which can make it difficult for the model to learn effective segmentation. To address this, we could explore **simplifying the annotations** by reducing the number of overlapping instances and creating clearer boundaries.
+
+To **improve model performance**, we could also consider refining our **data augmentation strategy**. Techniques such as **random cropping**, **flipping**, and **rotation** could help increase the diversity of the training data and improve the model's ability to generalize. Additionally, we could explore **adjusting the model architecture** to better capture the intricacies of the dataset, such as by increasing the depth of the backbone network or adding more layers to the RPN.
+
+In terms of quantitative analysis, it's encouraging to note that the **mrcnn_class_loss** and **mrcnn_bbox_loss** have both decreased significantly over the course of training, indicating that the model is learning to **classify** and **regress bounding boxes** more accurately. However, the final losses are still higher than those achieved in some previous experiments, suggesting that there is still **room for improvement**.
+
 
 
 ## 🚀 Getting Started
