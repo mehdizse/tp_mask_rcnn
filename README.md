@@ -114,3 +114,13 @@ The training process demonstrates a steady decline in both training and validati
 ### Installation
 ```sh
 pip install -r requirements.txt
+
+
+## 📚 References
+
+- Mask R-CNN Paper: [arXiv:1703.06870](https://arxiv.org/abs/1703.06870)
+- Original Mask R-CNN Implementation: [matterport/Mask_RCNN](https://github.com/matterport/Mask_RCNN)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
