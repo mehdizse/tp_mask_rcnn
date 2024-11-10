@@ -13,6 +13,7 @@ The goal of this project is to accurately detect drones in images using a pre-tr
 
 ![Annotated Training Image Exemple](images/drone_annotation_0.PNG)
 ![Annotated Training Image Exemple 2](images/drone_annotation_2.PNG)
+![Annotated Training Image Exemple 3](images/drone_annotation_4.PNG)
 
 ## Displaying an Image and its Associated Masks
 
