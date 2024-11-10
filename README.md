@@ -32,6 +32,20 @@ Each mask shows individual objects, making it easier to observe object locations
     - [Training images and annotations](dataset/train)
     - [Validation images and annotations](dataset/val)
 
+    dataset/
+    │
+    ├── train/
+    │   ├── images/        # Contains training images
+    │   └── annotations/   # Contains training annotations
+    │
+    ├── val/
+    │   ├── images/        # Contains validation images
+    │   └── annotations/   # Contains validation annotations
+    │
+    └── validation/
+        └── /              # Contains test images for final evaluation
+
+
 ## 🧠 Model Architecture
 The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 1. Region Proposal Network (RPN)
