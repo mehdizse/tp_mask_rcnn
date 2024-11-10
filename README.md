@@ -15,6 +15,20 @@ The goal of this project is to accurately detect drones in images using a pre-tr
 ![Annotated Training Image Exemple 2](images/drone_annotation_2.PNG)
 ![Annotated Training Image Exemple 3](images/drone_annotation_4.png)
 
+
+## Dataset Structure
+
+The dataset is organized into three main directories: [`train`](dataset/train), [`val`](dataset/val), and [`validation`](dataset/validation). Each folder serves a specific purpose for training, validation, and testing of the model:
+
+
+### Directory Descriptions
+- **[`train/`](dataset/train)**: Holds the training dataset with separate `images` and `annotations` directories.
+- **[`val/`](dataset/val)**: Contains the validation dataset, organized with `images` and `annotations`.
+- **[`validation/`](dataset/validation)**: Contains only test images in the `images` directory, used for final evaluation.
+
+> **Note**: The `validation` folder includes only images, as it is typically used to assess model performance on unseen data without labels.
+
+
 ## Displaying an Image and its Associated Masks
 
 Below are examples showing an image from the dataset and its associated object masks. Each mask highlights a detected object, making it possible to visualize how well the model can segment and locate each object within the image.
@@ -26,18 +40,6 @@ Below are examples showing an image from the dataset and its associated object m
 ![Example Image 2](images/mask2.png)  
 
 Each mask shows individual objects, making it easier to observe object locations and contours in the images.
-
-- **Annotations and Images**: 
-## Dataset Structure
-
-The dataset is organized into three main directories: `train`, `val`, and `validation`. Each folder serves a specific purpose for training, validation, and testing of the model:
-
-### Directory Descriptions
-- **`train/`**: Holds the training dataset with separate `images` and `annotations` directories.
-- **`val/`**: Contains the validation dataset, organized with `images` and `annotations`.
-- **`validation/`**: Contains only test images in the `images` directory, used for final evaluation.
-
-> **Note**: The `validation` folder includes only images, as it is typically used to assess model performance on unseen data without labels.
 
 
 ## 🧠 Model Architecture
