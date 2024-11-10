@@ -28,22 +28,16 @@ Below are examples showing an image from the dataset and its associated object m
 Each mask shows individual objects, making it easier to observe object locations and contours in the images.
 
 - **Annotations and Images**: 
-  - Samples from the dataset are included in the `dataset` directory:
-    - [Training images and annotations](dataset/train)
-    - [Validation images and annotations](dataset/val)
+## Dataset Structure
 
-    dataset/
-    │
-    ├── train/
-    │   ├── images/        # Contains training images
-    │   └── annotations/   # Contains training annotations
-    │
-    ├── val/
-    │   ├── images/        # Contains validation images
-    │   └── annotations/   # Contains validation annotations
-    │
-    └── validation/
-        └── /              # Contains test images for final evaluation
+The dataset is organized into three main directories: `train`, `val`, and `validation`. Each folder serves a specific purpose for training, validation, and testing of the model:
+
+### Directory Descriptions
+- **`train/`**: Holds the training dataset with separate `images` and `annotations` directories.
+- **`val/`**: Contains the validation dataset, organized with `images` and `annotations`.
+- **`validation/`**: Contains only test images in the `images` directory, used for final evaluation.
+
+> **Note**: The `validation` folder includes only images, as it is typically used to assess model performance on unseen data without labels.
 
 
 ## 🧠 Model Architecture
