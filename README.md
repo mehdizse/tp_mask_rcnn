@@ -48,7 +48,7 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 2. Mask Head for segmentation
 
 ## 🚂 Training
-- **Epochs**: 20 (each epoch takes approximately 2 hours, as shown in [train_logs.txt](train_logs.txt))
+- **Epochs**: 20 (each epoch takes approximately 2 hours)
 - **Learning Rate**: 0.001 
 - **Optimizer**: Adam
 - **Batch Size**: 1 (due to GPU limitations)
@@ -122,10 +122,6 @@ The following parameters were adjusted:
 These refinements were implemented to achieve a better trade-off between detection accuracy and computational efficiency, allowing the model to perform effectively on the target dataset and accurately segment drones in various image conditions.
 
 ### 📋 Refinement Results
-
-The model was refined over a span of 10 epochs, with training and validation metrics logged in the [`refine_logs.txt`](refine_logs.txt) file. This log file includes detailed metrics for each epoch, allowing further analysis of how the refinement affected model accuracy, loss, and detection quality. 
-
-## Refinement Logs
 
 Below are screenshots of the refinement logs generated during the refinement process. These logs show the progression of the training and the losses calculated at each epoch:
 
