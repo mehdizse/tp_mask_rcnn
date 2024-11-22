@@ -64,10 +64,6 @@ This project includes two Jupyter notebooks for training and testing:
 - **[train.ipynb](train.ipynb)**: This notebook contains the code and dataset for training the model. It includes preprocessing, model setup, and training steps and also the refine code.
 - **[test.ipynb](test.ipynb)**: This notebook contains code for testing the trained model on real images. It allows you to evaluate the model's performance on new, unseen data.
 
-## Training Logs
-Below is an image showing the training logs generated for each epoch during the training process:
-<br/>
-<img src="images/fichiers_genere_annotation.PNG" alt="Training Logs" width="500"/>
 
 ## 📈 Results
 
@@ -87,6 +83,9 @@ Below are screenshots of the training logs generated during the training process
 4. **Training Log (Epoch 16-20)**  
    ![Training Log Epoch 16-20](images/train_result_4.PNG)
 
+Below is an image showing the files generated during the training process. These files include the model checkpoints saved at each epoch, which can be used for further evaluation or fine-tuning.
+<br/>
+<img src="images/fichiers_genere_annotation.PNG" alt="Training Logs" width="500"/>
 
 - **Confusion Matrix**: 
 
