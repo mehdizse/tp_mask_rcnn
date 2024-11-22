@@ -71,7 +71,23 @@ Below is an image showing the training logs generated for each epoch during the 
 
 ## 📈 Results
 
-- **Training Logs**: Included in the [train_logs.txt](train_logs.txt) file.
+## Training Logs
+
+Below are screenshots of the training logs generated during the training process. These logs show the progression of the training and the losses calculated at each epoch:
+
+1. **Training Log (Epoch 1-5)**  
+   ![Training Log Epoch 1-5](images/train_result_0.PNG)
+
+2. **Training Log (Epoch 6-10)**  
+   ![Training Log Epoch 6-10](images/train_result_2.PNG)
+
+3. **Training Log (Epoch 11-15)**  
+   ![Training Log Epoch 11-15](images/train_result_3.PNG)
+
+4. **Training Log (Epoch 16-20)**  
+   ![Training Log Epoch 16-20](images/train_result_4.PNG)
+
+
 - **Confusion Matrix**: 
 
 The confusion matrix below represents the results of our drone detection model on the test dataset. As shown, all values in the matrix are zero, which indicates that the model did not make any correct or incorrect predictions for either the "background" or "drone" classes in this particular evaluation.
@@ -112,7 +128,15 @@ The model was refined over a span of 10 epochs, with training and validation met
 
 ## Refinement Logs
 
-Below is an image showing the refinement logs generated for each epoch during the refinement process:
+Below are screenshots of the refinement logs generated during the refinement process. These logs show the progression of the training and the losses calculated at each epoch:
+
+1. **Refinement Log (Epoch 1-5)**  
+   ![Refinement Log Epoch 1-5](images/refine_result.PNG)
+
+2. **Refinement Log (Epoch 6-10)**  
+   ![Refinement Log Epoch 6-10](images/refine_result_2.PNG)
+
+Below is an image showing the files generated during the refinement process. These files include the model checkpoints saved at each epoch, which can be used for further evaluation or fine-tuning.
 
 <img src="images/fichiers_genere_retrain.PNG" alt="Training Logs" width="500"/>
 
