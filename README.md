@@ -71,17 +71,20 @@ This project includes two Jupyter notebooks for training and testing:
 
 Below are screenshots of the training logs generated during the training process. These logs show the progression of the training and the losses calculated at each epoch:
 
-1. **Training Log (Epoch 1-5)**  
-   ![Training Log Epoch 1-5](images/train_result_0.PNG)
+1. **Training Log (Epoch 1-4)**  
+   ![Training Log Epoch 1-4](images/train_result1.png)
 
-2. **Training Log (Epoch 6-10)**  
-   ![Training Log Epoch 6-10](images/train_result_2.PNG)
+2. **Training Log (Epoch 5-8)**  
+   ![Training Log Epoch 5-8](images/train_result2.png.PNG)
 
-3. **Training Log (Epoch 11-15)**  
-   ![Training Log Epoch 11-15](images/train_result_3.PNG)
+3. **Training Log (Epoch 9-12)**  
+   ![Training Log Epoch 9-12](images/train_result3.PNG)
 
-4. **Training Log (Epoch 16-20)**  
-   ![Training Log Epoch 16-20](images/train_result_4.PNG)
+4. **Training Log (Epoch 13-16)**  
+   ![Training Log Epoch 13-16](images/train_result4.PNG)
+
+4. **Training Log (Epoch 17-20)**  
+   ![Training Log Epoch 17-20](images/train_result5.PNG)
 
 Below is an image showing the files generated during the training process. These files include the model checkpoints saved at each epoch, which can be used for further evaluation or fine-tuning.
 <br/>
@@ -92,7 +95,7 @@ Below is an image showing the files generated during the training process. These
 The confusion matrix below represents the results of our drone detection model on the test dataset. As shown, all values in the matrix are zero, which indicates that the model did not make any correct or incorrect predictions for either the "background" or "drone" classes in this particular evaluation.
 
 ![Confusion Matrix](images/matrice_de_confusion.png)
-- **Loss Graph**: ![Training vs Validation Loss](images/plot.PNG)
+- **Loss Graph**: ![Training vs Validation Loss](images/train_plot.PNG)
 - **Test Images**: 
 
 Below are examples of the model's predictions on test images. Each output includes the original image and the detected areas, highlighting where the model identified drones.
