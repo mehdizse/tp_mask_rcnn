@@ -75,16 +75,16 @@ Below are screenshots of the training logs generated during the training process
    ![Training Log Epoch 1-4](images/train_result1.png)
 
 2. **Training Log (Epoch 5-8)**  
-   ![Training Log Epoch 5-8](images/train_result2.png.PNG)
+   ![Training Log Epoch 5-8](images/train_result2.png)
 
 3. **Training Log (Epoch 9-12)**  
-   ![Training Log Epoch 9-12](images/train_result3.PNG)
+   ![Training Log Epoch 9-12](images/train_result3.png)
 
 4. **Training Log (Epoch 13-16)**  
-   ![Training Log Epoch 13-16](images/train_result4.PNG)
+   ![Training Log Epoch 13-16](images/train_result4.png)
 
 4. **Training Log (Epoch 17-20)**  
-   ![Training Log Epoch 17-20](images/train_result5.PNG)
+   ![Training Log Epoch 17-20](images/train_result5.png)
 
 Below is an image showing the files generated during the training process. These files include the model checkpoints saved at each epoch, which can be used for further evaluation or fine-tuning.
 <br/>
