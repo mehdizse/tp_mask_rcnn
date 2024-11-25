@@ -95,7 +95,7 @@ Below is an image showing the files generated during the training process. These
 The confusion matrix below represents the results of our drone detection model on the test dataset. As shown, all values in the matrix are zero, which indicates that the model did not make any correct or incorrect predictions for either the "background" or "drone" classes in this particular evaluation.
 
 ![Confusion Matrix](images/matrice_de_confusion.png)
-- **Loss Graph**: ![Training vs Validation Loss](images/train_plot.PNG)
+- **Loss Graph**: ![Training vs Validation Loss](images/train_plot.png)
 - **Test Images**: 
 
 Below are examples of the model's predictions on test images. Each output includes the original image and the detected areas, highlighting where the model identified drones.
@@ -120,7 +120,7 @@ The following parameters were adjusted:
 - **DETECTION_MIN_CONFIDENCE**: Reduced to `0.5` to detect a broader range of objects, making the model more sensitive to potential drone objects in images.
 - **DETECTION_NMS_THRESHOLD**: Set to `0.4` to increase the precision of the model’s bounding box outputs and reduce overlapping detections.
 - **STEPS_PER_EPOCH**: Increased to `150` for a higher number of training iterations per epoch, which improves model learning.
-- **VALIDATION_STEPS**: Set to `25` to ensure sufficient validation checks during each epoch, providing a balanced assessment of model performance.
+- **VALIDATION_STEPS**: Set to `25` to ensure sufficient validation checks during each epoch,git  providing a balanced assessment of model performance.
 
 These refinements were implemented to achieve a better trade-off between detection accuracy and computational efficiency, allowing the model to perform effectively on the target dataset and accurately segment drones in various image conditions.
 
