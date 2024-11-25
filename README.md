@@ -128,11 +128,11 @@ These refinements were implemented to achieve a better trade-off between detecti
 
 Below are screenshots of the refinement logs generated during the refinement process. These logs show the progression of the training and the losses calculated at each epoch:
 
-1. **Refinement Log (Epoch 1-5)**  
-   ![Refinement Log Epoch 1-5](images/refine_result.PNG)
+1. **Refinement Log (Epoch 21-26)**  
+   ![Refinement Log Epoch 21-26](images/refine_result.PNG)
 
-2. **Refinement Log (Epoch 6-10)**  
-   ![Refinement Log Epoch 6-10](images/refine_result_2.PNG)
+2. **Refinement Log (Epoch 27-30)**  
+   ![Refinement Log Epoch 27-30](images/refine_result_2.PNG)
 
 Below is an image showing the files generated during the refinement process. These files include the model checkpoints saved at each epoch, which can be used for further evaluation or fine-tuning.
 
