@@ -104,7 +104,7 @@ Below are examples of the model's predictions on test images. Each output includ
 ![Test Image 1](images/result_0.png)
 
 **Example Test Image 2**:  
-![Test Image 2](images/result_3.png)
+![Test Image 2](images/result_2.png)
 
 These examples demonstrate the model's capacity to detect drones within real-world images, although some segmentation results may be inaccurate or contain errors.
 
