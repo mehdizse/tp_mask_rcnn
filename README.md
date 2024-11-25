@@ -144,15 +144,65 @@ Below is an image showing the files generated during the refinement process. The
 
 ## 📝 Observations and comments
 
+### Initial Training (Epochs 1-20)
+The model demonstrated progressive improvement in early stages:
+- Training loss decreased steadily from 14.45 to approximately 1.68
+- Validation loss was initially lower than training loss
+- Validation loss started showing oscillations from epoch 8, ranging between 1.5 and 4.2
+
+### Refinement Phase (Epochs 21-30)
+During the refinement phase, we observed:
+- Training loss decreased from 9.07 to 1.40
+- Validation loss stabilized between 1.5 and 2.0
+- MRCNN components (class, bbox, mask) showed zero values, indicating potential issues
+
+### 📈 Performance Analysis
+
+#### Signs of Moderate Overfitting
+- Moderate overfitting signals appeared around epoch 8
+- Main indicator: Validation loss began oscillating
+- Gap between training and validation loss remained reasonable
+
+#### Performance Metrics
+1. Training Loss Progression:
+   - Initial: 14.45
+   - Final: 1.68 (first phase)
+   - Refinement final: 1.40
+
+2. Validation Loss Pattern:
+   - Generally stable in early epochs
+   - Showed fluctuations after epoch 8
+   - Stabilized during refinement phase
+
+### 📝 Observations and Detailed Analysis
+
+#### Model Learning Patterns
 The training process demonstrates a **steady decline** in both training and validation losses, reflecting **effective learning** and **model performance**. However, the **RPN losses** remain relatively elevated, particularly the **RPN bounding box loss**, which suggests that the model is struggling to accurately regress the bounding boxes for proposals. This could be due to **suboptimal anchor configurations** or an **insufficient learning rate** for the RPN.
 
-Additionally, the model's performance may be hindered by **underfitting**, as indicated by the relatively high validation losses. One potential cause of this is the **complexity of the annotations** on the images. The dataset includes many **overlapping instances** and intricate boundaries, which can make it difficult for the model to learn effective segmentation. To address this, we could explore **simplifying the annotations** by reducing the number of overlapping instances and creating clearer boundaries.
+#### Dataset Limitations
+Our dataset lacks **diversity**, as we only used images of drones in **ideal positions**. This limitation impacts the model's ability to generalize effectively. Additionally, the oscillating validation loss from epoch 8 onwards suggests that the model might be struggling with consistent feature extraction.
 
-Our dataset lacks **diversity**, as we only used images of drones in **ideal positions**. To improve **dataset robustness** and **model generalization**, we could diversify by adding images that include **no drones** (negative samples), **partially visible drones**, or **drones alongside objects** that could resemble drones. This approach would help address **false positives** and improve **detection accuracy** in **real-world scenarios**.
+## 🔧 Recommendations for Improvement
 
-To **improve model performance**, we could also consider refining our **data augmentation strategy**. Techniques such as **random cropping**, **flipping**, and **rotation** could help increase the diversity of the training data and improve the model's ability to generalize. Additionally, we could explore **adjusting the model architecture** to better capture the intricacies of the dataset, such as by increasing the depth of the backbone network or adding more layers to the RPN.
+### Dataset Enhancement
+1. Add diversity through:
+   - **Negative samples** (images with no drones)
+   - **Partially visible drones**
+   - **Drones alongside similar objects**
+   - Images with varying lighting conditions and backgrounds
 
-In terms of quantitative analysis, it's encouraging to note that the **mrcnn_class_loss** and **mrcnn_bbox_loss** have both decreased significantly over the course of training, indicating that the model is learning to **classify** and **regress bounding boxes** more accurately. However, the final losses are still higher than those achieved in some previous experiments, suggesting that there is still **room for improvement**.
+
+### Annotation Optimization
+1. Simplify overlapping instances
+2. Create clearer boundaries
+3. Standardize annotation guidelines
+
+## 🎯 Next Steps
+1. Implement suggested dataset improvements
+2. Monitor component-wise losses more closely
+3. Consider early stopping around epoch 7-8
+4. Review and adjust hyperparameters
+5. Investigate the zero values in MRCNN components during refinement
 
 
 
