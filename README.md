@@ -156,24 +156,6 @@ During the refinement phase, we observed:
 - Validation loss stabilized between 1.5 and 2.0
 - MRCNN components (class, bbox, mask) showed zero values, indicating potential issues
 
-### 📈 Performance Analysis
-
-#### Signs of Moderate Overfitting
-- Moderate overfitting signals appeared around epoch 8
-- Main indicator: Validation loss began oscillating
-- Gap between training and validation loss remained reasonable
-
-#### Performance Metrics
-1. Training Loss Progression:
-   - Initial: 14.45
-   - Final: 1.68 (first phase)
-   - Refinement final: 1.40
-
-2. Validation Loss Pattern:
-   - Generally stable in early epochs
-   - Showed fluctuations after epoch 8
-   - Stabilized during refinement phase
-
 ### 📝 Observations and Detailed Analysis
 
 #### Model Learning Patterns
