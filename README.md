@@ -48,7 +48,7 @@ The Mask R-CNN architecture is used with a ResNet backbone and consists of:
 2. Mask Head for segmentation
 
 ## 🚂 Training
-- **Epochs**: 20 (each epoch takes approximately 2 hours)
+- **Epochs**: 20 
 - **Learning Rate**: 0.001 
 - **Optimizer**: Adam
 - **Batch Size**: 1 (due to GPU limitations)
