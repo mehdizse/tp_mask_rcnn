@@ -179,13 +179,6 @@ Our dataset lacks **diversity**, as we only used images of drones in **ideal pos
 2. Create clearer boundaries
 3. Standardize annotation guidelines
 
-## 🎯 Next Steps
-1. Implement suggested dataset improvements
-2. Monitor component-wise losses more closely
-3. Consider early stopping around epoch 7-8
-4. Review and adjust hyperparameters
-5. Investigate the zero values in MRCNN components during refinement
-
 
 
 ## 🚀 Getting Started
